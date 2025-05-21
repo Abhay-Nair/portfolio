@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Portfolio</title>
+  <style>
+    /* Basic Reset & Fonts */
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #f4f7f8;
+      color: #333;
+      line-height: 1.6;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 0 20px;
+      background-color: #0077cc;
+      color: white;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 8px;
+    }
+    header nav a {
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: white;
+    }
+    header nav a:hover {
+      color: #ffdd57;
+    }
+
+    /* Section Titles */
+    section h2 {
+      color: #0077cc;
+      border-bottom: 3px solid #0077cc;
+      padding-bottom: 6px;
+      margin-bottom: 15px;
+      margin-top: 40px;
+      font-size: 1.8rem;
+    }
+
+    /* About */
+    #about p {
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* Education, Skills, Contact */
+    ul {
+      list-style-type: none;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    /* Skills as badges */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .skill {
+      background-color: #0077cc;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    }
+
+    /* Projects */
+    .project {
+      background: white;
+      padding: 18px 20px;
+      border-radius: 8px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      transition: box-shadow 0.3s ease;
+    }
+    .project:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .project h3 {
+      margin-bottom: 8px;
+      color: #005fa3;
+    }
+    .project p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* Contact */
+    #contact p {
+      max-width: 700px;
+      margin: 0 auto 10px;
+      font-size: 1.1rem;
+    }
+    #contact a {
+      font-weight: 600;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header nav a {
+        display: block;
+        margin: 10px 0;
+      }
+      .skills-list {
+        justify-content: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a passionate second-year Computer Engineering student specializing in Data Science at DY Patil RAIT College of Engineering. I enjoy developing full-stack applications, machine learning projects, and continuously expanding my skillset in technology and finance.
+      </p>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>DY Patil RAIT College of Engineering</strong> — BTech in Computer Engineering (Data Science Major) (Expected 2026)</li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span class="skill">Python</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">PHP</span>
+        <span class="skill">MySQL</span>
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">OpenCV</span>
+        <span class="skill">Keras</span>
+        <span class="skill">Streamlit</span>
+        <span class="skill">Machine Learning</span>
+        <span class="skill">Data Analysis</span>
+        <span class="skill">Git</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>Mentor-Mentee Connection Website</h3>
+        <p>A college-specific platform connecting mentors and mentees with real-time notifications. Built with HTML, CSS, JavaScript, PHP, and MySQL.</p>
+      </div>
+
+      <div class="project">
+        <h3>Weather Prediction & Analytics App</h3>
+        <p>Developed a Ridge regression model to predict temperature using environmental data, plus a frontend UI for weather analytics.</p>
+      </div>
+
+      <div class="project">
+        <h3>Online Shopping Database Management System</h3>
+        <p>Full-stack app allowing sellers to list products and buyers to purchase, updating inventory dynamically. Technologies: PHP, MySQL, JavaScript, HTML, CSS.</p>
+      </div>
+
+      <div class="project">
+        <h3>Facial Emotion Recognition App</h3>
+        <p>Python app using OpenCV and Keras with a custom CNN trained on FER-2013 dataset for real-time emotion detection. UI created with Streamlit.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">linkedin.com/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">github.com/yourusername</a></p>
+    </section>
+
+  </main>
+
+</body>
+</html>
